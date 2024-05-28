@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>My Music List</title>
+    <style>
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3 style="margin-top: 45px; margin-bottom: 15px; padding-bottom: 50px; text-align: center">Hey, Do you mind looking through my music collections. It's full of HIT Songs!</h3>
+    <table class="table table-striped mb-2 table-bordered">
+        <thead>
+        <tr>
+            <th>I.D</th>
+            <th>Title</th>
+            <th>Artist Name</th>
+            <th>Album Name</th>
+            <th>Music Length</th>
+            <th>Genre</th>
+            <th>Year</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="music : ${allMusic}">
+            <td th:text="${music.id}"></td>
+            <td th:text="${music.title}"></td>
+            <td th:text="${music.artistName}"></td>
+            <td th:text="${music.albumName}"></td>
+            <td th:text="${music.musicDuration}"></td>
+            <td th:text="${music.genre}"></td>
+            <td th:text="${music.yearOfProd}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
