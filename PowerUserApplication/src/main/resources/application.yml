@@ -1,0 +1,21 @@
+server:
+  port: 8086
+#spring:
+#  application:
+#    name: PowerUserApplication
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/power_user_db
+#    username: root
+#    password: Hardeymorlah12%
+#    hikari:
+#      maximum-pool-size: 12
+#      jpa:
+#        hibernate:
+#          format_sql: true
+#          show_sql: true
+#          naming:
+#          physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+
+#spring:
+#  profiles:
+#    active: dev
